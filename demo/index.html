@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" class="theme-ocean">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <title>Northwind API | A typed .NET 8 minimal API</title>
+  <meta name="description" content="API explorer for Northwind, a typed .NET 8 minimal API with pagination, validation, RFC 7807 problem details and xUnit tests." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2304202a'/><text x='16' y='22' font-family='sans-serif' font-size='14' font-weight='700' fill='%2363e6b6' text-anchor='middle'>N</text></svg>" />
+  <link rel="stylesheet" href="arvion.css" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="aurora"></div>
+  <div class="grid-lines"></div>
+
+  <div class="app shell api-shell">
+    <aside class="api-sidebar">
+      <a class="brand" href="#/">
+        <span class="brand-mark">N</span>
+        <span>
+          <span class="brand-word">NORTHWIND <b>/</b> API</span>
+          <span class="brand-sub" style="display:block">Typed minimal API</span>
+        </span>
+      </a>
+      <div class="api-side-scroll">
+        <div class="nav-label">Customers</div>
+        <div class="endpoint-list" id="endpoint-customers"></div>
+        <div class="nav-label">Orders</div>
+        <div class="endpoint-list" id="endpoint-orders"></div>
+        <div class="nav-label">Meta</div>
+        <div class="endpoint-list" id="endpoint-meta"></div>
+        <div class="nav-label">Documents</div>
+        <a class="nav-item" href="#/problems" data-doc="problems"><span class="nav-dot"></span>Problem details</a>
+        <a class="nav-item" href="#/openapi" data-doc="openapi"><span class="nav-dot"></span>OpenAPI document</a>
+      </div>
+      <div class="side-foot card flat pad-sm">
+        <div class="row" style="gap:6px">
+          <span class="badge green"><span class="dot pulse"></span>.NET 8</span>
+          <span class="spacer"></span>
+          <span class="small muted mono">v1.0.0</span>
+        </div>
+        <p class="small muted" style="margin:8px 0 0">
+          <b id="test-count">38</b> xUnit tests<br />
+          In-memory repositories<br />
+          11 routes, one solution
+        </p>
+      </div>
+    </aside>
+
+    <div style="min-width:0">
+      <header class="topbar api-topbar">
+        <span class="api-crumb"><span class="muted">Northwind API</span> <span class="sep">/</span> <span id="crumb">Explorer</span></span>
+        <span class="spacer"></span>
+        <span class="badge">in-memory, no database</span>
+        <a class="btn sm" href="#/openapi">OpenAPI</a>
+        <a class="btn sm" href="https://github.com/arvion-technology/northwind-api" target="_blank" rel="noopener">GitHub ↗</a>
+      </header>
+
+      <main class="main api-main" id="view">
+        <noscript><div class="card"><p class="mb-0">The explorer simulates the C# API in the browser so it runs without a server. Enable JavaScript to use it.</p></div></noscript>
+      </main>
+    </div>
+  </div>
+
+  <div class="demo-banner">
+    <span class="brand-mark" style="width:20px;height:20px;font-size:9px;border-radius:6px">A</span>
+    <span>Arvion Labs</span>
+    <span class="sep"></span>
+    <a href="https://arvion-technology.github.io/labs/">All projects</a>
+    <span class="sep"></span>
+    <a href="https://github.com/arvion-technology/northwind-api" target="_blank" rel="noopener">source</a>
+  </div>
+
+  <script src="arvion.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
