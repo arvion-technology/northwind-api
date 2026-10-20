@@ -1,0 +1,11 @@
+[
+  { "wait": 1600 },
+  { "click": ".endpoint[data-id=\"orders-list\"]" },
+  { "wait": 900 },
+  { "click": "#send" },
+  { "wait": 1400 },
+  { "hash": "#/problems" },
+  { "wait": 1800 },
+  { "scroll": 260 },
+  { "wait": 1200 }
+]
